@@ -12,12 +12,13 @@ public interface PosService {
 
     public void checkout(Cart cart);
 
-    public void total(Cart cart);
+    public double total(Cart cart);
 
     public boolean add(Product product, int amount);
 
     public boolean add(String productId, int amount);
-
-
+    public boolean delete(String productId);
+    public void cancel();
+    public void charge();
     public List<Product> products();
 }
